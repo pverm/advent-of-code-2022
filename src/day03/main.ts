@@ -26,12 +26,12 @@ function getRucksacks(): Rucksack[] {
     });
 }
 
-function priority(item: string) {
+export function priority(item: string) {
     const base = item.toLowerCase() === item ? "a".charCodeAt(0) - 1 : "A".charCodeAt(0) - 27;
     return item.charCodeAt(0) - base;
 }
 
-function intersection<T>(set1: Set<T>, set2: Set<T>) {
+export function intersection<T>(set1: Set<T>, set2: Set<T>) {
     return new Set([...set1].filter(x => set2.has(x)));
 }
 

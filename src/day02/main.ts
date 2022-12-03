@@ -12,7 +12,7 @@ function parseInput(): Guide[] {
     return fileContent?.trim().split("\n").map(line => ({opponent: line[0], player: line[2]}));
 }
 
-function shapeValue(shape: string) {
+export function shapeValue(shape: string) {
     switch (shape) {
         case "A":
         case "X":
