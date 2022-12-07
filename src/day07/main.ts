@@ -60,7 +60,7 @@ function partOne() {
     const fileContent = getFileContent(__dirname, "input.txt")!;
     const root = process(fileContent.trim().split("\n"));
     const dirs = collectDirectories(root, dir => dir.size() <= 100000);
-    console.log(`Total size of all dirs of size <= 100000: ${dirs.reduce((sum, dir) => sum + dir.size(), 0)}}`);
+    console.log(`Total size of all dirs of size <= 100000: ${dirs.reduce((sum, dir) => sum + dir.size(), 0)}`);
 }
 
 function partTwo() {
@@ -77,7 +77,7 @@ function partTwo() {
 
 export const day7: Challenge = {
     day: 7,
-    title: "",
+    title: "No Space Left On Device",
     run: [{
             part: 1,
             run: partOne,
